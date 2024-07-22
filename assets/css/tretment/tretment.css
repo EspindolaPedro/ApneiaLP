@@ -1,0 +1,16 @@
+.treatment {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.treatment strong {
+    color: var(--a-6);
+}
+.treatment h1 {
+    padding-bottom: 20px;
+}
+@media (max-width: 450px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+

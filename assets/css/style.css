@@ -1,0 +1,13 @@
+@import url(global.css);
+@import url(utilities/color.css);
+@import url(utilities/typo.css);
+
+@import url(home/home.css);
+@import url(apneia/apneia.css);
+@import url(consequences/censequences.css);
+@import url(tretment/tretment.css);
+@import url(kindOf/kind.css);
+@import url(about/about.css);
+@import url(depoimentos/depoimentos.css);
+@import url(contato/contato.css);
+@import url(footer/footer.css);

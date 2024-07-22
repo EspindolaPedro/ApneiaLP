@@ -1,0 +1,29 @@
+.about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.about p {
+    max-width: 40ch;
+    grid-column: 1;
+}
+.about img {
+    grid-column: 2/-1;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 850px) {
+    .about {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about p {
+        max-width: 90%;
+    }
+
+}

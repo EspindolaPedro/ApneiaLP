@@ -1,0 +1,103 @@
+.kindOf {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.kindOf h3 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.kindOf-container {
+    padding: 20px;
+    background-color: #2E2E2E;
+    border-radius: 30px;
+}
+.kindOfHeader {
+    font: 600 1.2rem/1 "Roboto", sans-serif ;
+    display: flex;
+    justify-content: space-around;
+    color: var(--b-3) ;
+    cursor: pointer;    
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(64, 64, 64, 1) ;
+    
+    border-left:1px solid transparent ;
+}
+.kindOfHeader span {
+    padding-left: 10px;
+}
+.kindOfHeader span:not(:first-child) {
+    border-left:1px solid rgba(64, 64, 64, 1) ;
+    margin-right: 10px;
+}
+
+.kindOfContent div {
+    
+    width: 100%;
+    padding: 40px 20px 0 60px;
+}
+.js-content div.active {
+    height: 520px;
+}
+.js .js-content div {
+    display:  none;
+}
+.js-tabHeader .active {
+    color: var(--a-1);
+}
+.js-content div.active {    
+    display: block !important;
+    animation: show .56s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-40px,0,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@media (max-width:880px ) {
+    .kindOfContent div p,.kindOfContent div ul  {
+        font-size: 1.3rem;
+    }
+    .kindOfContent span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:650px ) {
+    .kindOfContent div p,.kindOfContent div ul  {
+        font-size: 1.1rem;
+    }
+    .kindOfHeader span {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width:500px ) {
+    .kindOfContent div p,.kindOfContent div ul  {
+        font-size: .935rem;
+    }
+    .kindOfContent div {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .kindOfContent div {
+    
+        width: 100%;
+        padding: 15px 10px 0 40px;
+    }
+}
+
+@media (max-width:400px ) {
+    .kindOfContent div p,.kindOfContent div ul  {
+        font-size: .835rem;
+    }
+}

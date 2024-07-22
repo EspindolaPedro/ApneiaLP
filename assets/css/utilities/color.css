@@ -1,0 +1,59 @@
+:root {
+     --a-1: #AB8D44 ;
+     --a-2: #BB8D1E ;
+     --a-3: #AC8D43 ;
+     --a-6: #A97C0F ;
+    
+
+     --b-1: #FFFFFF ;
+     --b-2: #F6F7F7 ;
+     --b-3: #EDEDED ;
+     --b-4: #DEDEDE ;
+     --b-5: #F4F4F4 ;
+
+     --p-1: #111111 ;
+     --p-2: #000000 ;
+     --p-3: #0A0A0A ;
+}
+
+.bg-1 {
+    background-color: var(--p-3) ;
+}
+.bg {
+    background-color: var(--b-2);
+}
+.bg-2 {
+    background-color: var(--p-1);
+}
+
+.bg-text {
+    background-color: var(--a-1);
+}
+.primary-color {
+    color:var(--a-1);
+}
+.text {
+    color: var(--b-1);
+}
+.text-1 {
+    color: var(--p-2);
+
+}
+.text-2 {
+    color: var(--b-2);
+}
+.text-3 {
+    color: var(--b-5);
+}
+.text-4 {
+    color: var(--b-3);
+}
+.linear-gradient {
+    background: linear-gradient(to right, var(--a-3) ,transparent);
+}
+.title-1 {
+    color: var(--p-1);
+}
+.title-2 {
+    color: var(--b-4);
+}

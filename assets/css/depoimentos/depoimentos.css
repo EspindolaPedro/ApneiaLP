@@ -1,0 +1,96 @@
+.dep-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.dep-content h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dep-content ul li {
+    max-width: 400px;
+    height: auto;
+}
+.dep-content ul li blockquote {
+    display: block;
+    max-width: 100%;
+}
+.slide-wrapper {
+    overflow: hidden;
+}
+.arrow-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.arrow-nav button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background: #A97C0F url(../../icons/seta.svg) center center no-repeat ;
+}
+.arrow-nav button.prev{
+    transform: rotate(-180deg);
+}
+.slide {
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+.slide:hover {
+    will-change: transform;
+}
+.slide li {
+    width: 80vw;
+    flex-shrink: 0;
+    max-width:max-content;
+    margin: 0 15px;
+
+    opacity: .8;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border-radius: 4px ;
+    overflow: hidden;
+    transform: scale(.6);
+    transition: .4s;
+
+}
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}
+[data-control='slide'] {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+[data-control='slide'] li a {
+   display: block;
+   width: 12px;
+   height: 12px;
+   background-color: #fff;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 5px;
+   text-indent: -999px;
+}
+[data-control='slide'] li.active a, 
+[data-control='slide'] li a {
+    transform: scale(.8);
+    transition: .6s;
+}
+
+[data-control='slide'] li.active a, 
+[data-control='slide'] li a:hover{
+    background: var(--point-detail);
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+@media (max-width: 800px) {
+    .depoimentos-content .indent h1{
+        margin-left: initial;
+        font-size: 2.9rem;
+    }
+}
