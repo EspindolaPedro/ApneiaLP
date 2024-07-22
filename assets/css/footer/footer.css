@@ -43,17 +43,27 @@ div.p2 img:hover{
         grid-template-columns: 1fr;
         margin: 0 auto;
         width: 90%;
+        
+        font-size: 1.2rem;
+    }
+    .footer img {
+        max-width: 100%;
+        height: auto;
     }
     .footer p.text-m {
         font-size: 1rem;
     }
     .footer div.p1 {
+        font-size: 1.2rem;
         text-align: center;
     }
-    .footer div.p2 {
+    .footer .p2 p {
+        font-size: 1.2rem;
         text-align: center;
+        flex-direction: column;
+        gap: 10px;
     }
-    div.p2 {
-     flex-direction: column;
+    .footer .p2 p > img {
+        flex-wrap: wrap;
     }
 }
